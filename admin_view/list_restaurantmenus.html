@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../admin_styles/food_styles.css">
+    <style>
+        img {
+            width: 100px;
+            height: 80px;
+            object-fit: fill;
+        }
+    </style>
+</head>
+<!-- I didn't add more elements, just a structure, because we will add logic in future -->
+
+<body>
+    <div id="list_menu" class="container">
+
+        <h1>Menu</h1>
+        <hr />
+        <div id="list_table_menu">
+            <div class="sel-rest"><label for="selres">Select Restaraunt</label></div>
+            <div class="sel-rest"><select name="selres" id="lieomuervctku8h1iv">
+                    <option value="disibled" selected="selected">Please select THE Restaurant</option>
+                    <option value="food-town-rest">Food Town</option>
+                    <option value="green-leaf-rest">Green Leaf Hotel</option>
+                    <option value="kingston-rest">Kingston Hotel</option>
+                </select></div>
+
+            <hr />
+            <table>
+                <form action="" method="get">
+                    <tr>
+                        <th>Food Item Image</th>
+                        <th>Food Item Name</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../resourses/food_images/veg-pizza.jpg" alt="vegpizza" />
+                        </td>
+                        <td>Veg Pizza</td>
+                        <td>$5</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../resourses/food_images/hot-and-sour-soup.jpg" alt="hot-and-sour-soup" />
+                        </td>
+                        <td>Hot & Sour Soup</td>
+                        <td>$8</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../resourses/food_images/lasagna-sandwich.jpg" alt="lasagna-sandwich" />
+                        </td>
+                        <td>Lasagna Sandwich</td>
+                        <td>$12</td>
+                    </tr>
+                </form>
+            </table>
+        </div>
+        <div><button class="back"><a href="admin_page.html">Back</a></button></div>
+    </div>
+</body>
+
+</html>

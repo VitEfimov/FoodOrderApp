@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Cuisine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../admin_styles/food_styles.css">
+</head>
+<!-- I didn't add more elements, just a structure, because we will add logic in future -->
+
+<body>
+    <div id="add_cus" class="container">
+
+        <h1>Add Cuisine</h1>
+        <hr />
+        <div id="add_cus_table">
+            <table>
+                <form action="" method="post">
+                    <tr>
+                        <td><label for="cusine-name">Cuisine Name:</label></td>
+                        <td><input type="text" name="cusine-name" id="cus_name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="cuisine-description">Cuisine Description:</label></td>
+                        <td><textarea name="cuisine-description" id="cus_desc" cols="30" rows="5"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="cuisineimg">Cuisine Image:</label></td>
+                        <td><input type="file" name="cuisineimg" id="cat_img"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="is_available">Is Active</label></td>
+                        <td><input type="checkbox" name="is_available" id="available"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                           <button id="cus_reset" type="reset" class="discard">Discard</button> 
+                        </td>
+                        <td>
+                            
+                            <button id="cus_submit" type="submit" class="save">Save</button>
+                        </td>
+                    </tr>
+                </form>
+            </table>
+        </div>
+        <div><button class="back"><a href="admin_page.html">Back</a></button></div>
+    </div>
+    
+</body>
+
+</html>

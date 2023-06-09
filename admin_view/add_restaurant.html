@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Restaurant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../admin_styles/food_styles.css">
+</head>
+<!-- I didn't add more elements, just a structure, because we will add logic in future -->
+<body>
+    <div id="add_rest" class="container">
+        
+            <h1>Add Restaurant</h1>
+            <hr />
+            <div id="add_rest_table" class="add-rest">
+            <table>
+                <form action="" method="post">
+                <tr>
+                    <td><label for="restaraunt-name">Restaurant Name:</label></td>
+                    <td><input type="text" name="restaraunt-name" id="rest_name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="restaraunt-address">Restaraunt Address:</label></td>
+                    <td><textarea name="restaurant-address" id="rest_address" cols="30" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="contact№">Contact №</label></td>
+                    <td><input type="tel" name="contact№" id="rest_cont" required></td>
+                </tr>
+                <tr>
+                    <td><label for="restaurant-img">Restaurant Image:</label></td>
+                    <td><input type="file" name="restaurant-img" id="rest_img"></td>
+                </tr>
+                <tr>
+                    <td>
+                       <button id="rest_reset" type="reset" class="discard">Discard</button> 
+                    </td>
+                    <td>
+                        
+                        <button id="menu_submit" type="submit" class="save">Save</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        </form>
+        <div><button class="back"><a href="admin_page.html">Back</a></button></div>
+    </div>
+</body>
+
+</html>

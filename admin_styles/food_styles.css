@@ -1,0 +1,136 @@
+h1 {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+.container {
+    /* background-color: rgb(246, 238, 228); */
+    background-color: rgb(255, 240, 222);
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: auto;
+    padding: 10px;
+    width: 100%;
+/* display: flex; */
+
+    padding: 3%;
+    justify-content: center;
+    box-sizing: border-box;
+    background-image: url("../resourses/restaraunt_images/Logo50-20%.png");
+    background-repeat: no-repeat;
+}
+
+
+table {
+    width:fit-content;
+    padding: 2%;
+    margin: 1%;
+    border: 1px solid rgba(0, 0, 0, 0.276);
+    box-shadow: 1px 2px 3px black;
+}
+
+th {
+    background-color: rgb(248, 212, 173);
+    padding: auto;
+    width: fit-content;
+    margin: 9%;
+    /* text-align: center; */
+}
+
+td {
+    width: auto;
+    padding: 20px;
+    text-align:center;
+    margin: 3%;
+}
+
+tr {
+    padding: auto;
+    width: auto;
+}
+
+#admin {
+    width: 100%;
+}
+
+/* .label {
+    border-radius: 10%;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    width: 200px;
+    height: 220px;
+    background-image: url("../resourses/restaraunt_images/Logo.png");
+    background-size: cover;
+    
+    z-index: 1;
+    opacity: 50%;
+} */
+.save,.discard,input[type="file"],select,.back{
+    text-align: center;
+    background-color: rgb(177, 70, 73, 0.833);
+    font-weight: bold;
+    color: white;
+}
+option{
+    font-weight: bold;
+}
+.card {
+    display: flex;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    flex-direction: column;
+    position: relative;
+    width:auto;
+    height:auto;
+    background-color: rgba(177, 70, 73, 0.833);
+    padding: 0.5rem;
+    margin: 1rem;
+    padding-bottom: 1.5rem;
+    border-radius: 1rem;
+    word-wrap:break-word;
+    flex:content;
+    text-align: center;
+}
+
+.row {
+    padding: auto;
+    width:100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+body {
+    padding: 5%;
+}
+
+button {
+    width: 100%;
+    box-shadow: 1px 1px black;
+}
+form,
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    border-radius: 10%;
+    width:100px;
+    height: auto;
+    object-fit:fill;
+}
+.editbtn {
+    text-align: center;
+    background-color: rgb(177, 70, 73, 0.833);
+    font-weight: bold;
+    border-radius: 10%;
+    color: rgb(255, 240, 222);;
+}
+.sel-rest{
+    text-align: center;
+}
+a{
+    color: rgb(255, 240, 222);
+    text-decoration-line: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

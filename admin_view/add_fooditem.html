@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Food Item</title>
+    <link rel="stylesheet" href="../admin_styles/food_styles.css">
+
+</head>
+<!-- I didn't add more elements, just a structure, because we will add logic in future -->
+
+<body>
+    <div id="add_food" class="container">
+        
+            <h1>Add Food Item</h1>
+            <hr />
+            <div id="add_food_table">
+                
+                <table>
+                    <form action="" method="post">
+                    <tr>
+                        <th colspan="2">Food Item Information</th>
+                    </tr>
+                    <tr>
+                        <td><label for="food-item-name">Food Item Name:</label></td>
+                        <td><input type="text" name="food-item-name" id="food_name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="food-item-desc">Food Item Description:</label></td>
+                        <td><textarea name="food-item-description" id="food_desc" cols="30" rows="5"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="is_available">Available</label></td>
+                        <td><input type="checkbox" name="is_available" id="available"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="vegiterian">Vegiterian</label></td>
+                        <td><input type="checkbox" name="vegiterian" id="veg"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="food-item-category">Category:</label></td>
+                        <td><select name="food-item-category" id="food_cat">
+                                <option value="disibled" selected="selected">Please select an option</option>
+                                <option value="pasta">Pasta</option>
+                                <option value="pizza">Pizza</option>
+                                <option value="sandwich">Sandwich</option>
+                                <option value="soup">Soup</option>
+
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="cuisine-select">Cuisine:</label></td>
+                        <td><select name="cuisine-select" id="cus_select">
+                                <option value="disibled" selected="selected">Please select an option</option>
+                                <option value="italian">Italian</option>
+                                <option value="asian">Asian</option>
+                                <option value="chinese">Chinese</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="foodimg">Food Img:</label></td>
+                        <td><input type="file" class="foodimg" id="food_img" ></td>
+                    </tr>
+                    <tr>
+                        <td>
+                           <button id="food_reset" type="reset" class="discard">Discard</button> 
+                        </td>
+                        <td>
+                            
+                            <button id="food_submit" type="submit" class="save">Save</button>
+                        </td>
+                    </tr>
+                </form>
+                </table>
+            </div>
+       
+            <div><button class="back"><a href="admin_page.html">Back</a></button></div>
+    
+
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../admin_styles/food_styles.css">
+    <style>
+        img {
+            width: 100px;
+            height: 80px;
+            object-fit: fill;
+        }
+    </style>
+</head>
+<!-- I didn't add more elements, just a structure, because we will add logic in future -->
+
+<body>
+    <div id="add_menu" class="container">
+
+        <h1>Add Menu</h1>
+        <hr />
+        <form action="" method="post"></form>
+        <div id="menu_rest" class="selectrestaraunt">
+
+            <label for="selres">Select Restaurant</label><br />
+            <select name="select-restaraunt" id="selres">
+                <option value="disibled" selected="selected">Please select an option</option>
+                <option value="foodtown">Food Town</option>
+                <option value="greenlhotel">Green Leaf Hotel</option>
+                <option value="kinghotel">Kingston Hotel</option>
+            </select>
+        </div>
+        <hr />
+        <div id="add_menu_table" class="rest-table">
+            <table>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="vegpizza" value="vegpizza" />
+                    </td>
+                    <td>
+                        <img src="../resourses/food_images/veg-pizza.jpg" alt="vegpizza" />
+                    </td>
+                    <td>
+                        <label for="vegquantity">Veg Pizza</label>
+                    </td>
+                    <td>
+                        <input type="number" name="vegquantity" min="1" max="10" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="hot-and-sour-soup" value="hot-and-sour-soup" />
+                    </td>
+                    <td>
+                        <img src="../resourses/food_images/hot-and-sour-soup.jpg" alt="hot-and-sour-soup" />
+                    </td>
+                    <td>
+                        <label for="hot-and-sour-soup-quantity">Hot & Sour Soup</label>
+                    </td>
+                    <td>
+                        <input type="number" name="hot-and-sour-soup-quantity" min="1" max="10" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="lasagna-sandwich" value="lasagna-sandwich" />
+
+                    </td>
+                    <td>
+                        <img src="../resourses/food_images/lasagna-sandwich.jpg" alt="lasagna-sandwich" />
+                    </td>
+                    <td>
+                        <label for="lasagna-sandwich-quantity">Lasagna Sandwich</label>
+                    </td>
+                    <td>
+                        <input type="number" name="lasagna-sandwich-quantity" min="1" max="10" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="chick-fil-a-sandwich" value="chick-fil-a-sandwich" />
+
+                    </td>
+                    <td>
+                        <img src="../resourses/food_images/chick-fil-a-sandwich.jpg" alt="chick-fil-a-sandwich" />
+                    </td>
+                    <td>
+                        <label for="chick-fil-a-sandwich-quantity">Chick-Fil-A-Sandwich</label>
+                    </td>
+                    <td>
+                        <input type="number" name="chick-fil-a-sandwich-quantity" min="1" max="10" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="grilled-mac-&-cheese-sandwich"
+                            value="grilled-mac-&-cheese-sandwich" />
+                    </td>
+                    <td>
+                        <img src="../resourses/food_images/grilled-mac-&-cheese-sandwich.jpg"
+                            alt="grilled-mac-&-cheese-sandwich" />
+                    </td>
+                    <td>
+                        <label for="grilled-mac-&-cheese-sandwich-quantity">Grilled Mac & Cheese Sandwich</label>
+                    </td>
+                    <td>
+                        <input type="number" name="grilled-mac-&-cheese-sandwich-quantity" min="1" max="10" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button id="menu_reset" type="reset" class="discard">Discard</button>
+                    </td>
+
+                    <td colspan="2">
+                        <button id="menu_submit" type="submit" class="addtomenu">Add To Menu</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        </form>
+        <div><button class="back"><a href="admin_page.html">Back</a></button></div>
+    </div>
+</body>
+
+</html>
