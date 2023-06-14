@@ -6,9 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Menu</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../admin_styles/base.css">
     <link rel="stylesheet" href="../admin_styles/food_styles.css">
     <style>
         img {
@@ -26,15 +24,16 @@
         <h1>Add Menu</h1>
         <hr />
         <form action="" method="post"></form>
-        <div id="menu_rest" class="selectrestaraunt">
+        <div id="menu-rest" class="selectrestaraunt">
 
-            <label for="selres">Select Restaurant</label><br />
-            <select name="select-restaraunt" id="selres">
+            <div class="selres"><label for="selres">Select Restaurant</label></div>
+            <div class="selres"><select name="select-restaraunt" class="selres">
                 <option value="disibled" selected="selected">Please select an option</option>
                 <option value="foodtown">Food Town</option>
                 <option value="greenlhotel">Green Leaf Hotel</option>
                 <option value="kinghotel">Kingston Hotel</option>
             </select>
+        </div>
         </div>
         <hr />
         <div id="add_menu_table" class="rest-table">
@@ -119,13 +118,13 @@
                     </td>
 
                     <td colspan="2">
-                        <button id="menu_submit" type="submit" class="addtomenu">Add To Menu</button>
+                        <button id="menu_submit" type="submit" class="save">Add To Menu</button>
                     </td>
                 </tr>
             </table>
         </div>
         </form>
-        <div><button class="back"><a href="admin_page.html">Back</a></button></div>
+        <div class="back-btn"><button class="back"><a href="admin_page.html">Back</a></button></div>
     </div>
 </body>
 

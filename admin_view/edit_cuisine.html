@@ -5,51 +5,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Category</title>
+    <title>Edit Cuisine</title>
+
     <link rel="stylesheet" href="../admin_styles/food_styles.css">
     <link rel="stylesheet" href="../admin_styles/base.css">
 </head>
 <!-- I didn't add more elements, just a structure, because we will add logic in future -->
 
 <body>
-    <div id="add_cat" class="container">
+    <div id="edit_cus" class="container">
 
-        <h1>Add Category</h1>
+        <h1>Edit Cuisine</h1>
         <hr />
-        <div id="add_cat_table" name="">
+        <div id="edit_cus_table">
             <table>
                 <form action="" method="post">
                     <tr>
-                        <td><label for="category-name">Category Name:</label></td>
-                        <td><input type="text" name="category-name" id="cat_name"  required></td>
+                        <td><label for="cusine-name">Cuisine Name:</label></td>
+                        <td><input type="text" name="cusine-name" id="cus_name" disabled></td>
                     </tr>
                     <tr>
-                        <td><label for="category-description">Category Description:</label></td>
-                        <td><textarea name="category-description" id="cat_desc" cols="30" rows="5"></textarea>
+                        <td><label for="cuisine-description">Cuisine Description:</label></td>
+                        <td><textarea name="cuisine-description" id="cus_desc" cols="30" rows="5"></textarea>
                         </td>
+                    </tr>
+                    <tr>
+                        <td><label for="cuisineimg">Cuisine Image:</label></td>
+                        <td><input type="file" name="cuisineimg" id="cat_img"></td>
                     </tr>
                     <tr>
                         <td><label for="is_available">Is Active</label></td>
                         <td><input type="checkbox" name="is_available" id="available"></td>
                     </tr>
                     <tr>
-                        <td><label for="category-img">Category Image:</label></td>
-                        <td><input type="file" name="category-img" id="cat_img"></td>
-                    </tr>
-                    <td>
-                           <button id="cat_reset" type="reset" class="discard">Discard</button> 
+                        <td>
+                           <button id="cus_reset" type="reset" class="discard">Discard</button> 
                         </td>
                         <td>
                             
-                            <button id="cat_submit" type="submit" class="save">Save</button>
+                            <button id="cus_submit" type="submit" class="save">Save</button>
                         </td>
                     </tr>
                 </form>
             </table>
         </div>
-        <div class="back-btn"><button class="back"><a href="admin_page.html">Back</a></button></div>
-        <div><button type=""></button></div>
+        <div class="back-btn"><button class="back"><a href="list_cuisines.html">Back</a></button></div>
     </div>
+    
 </body>
 
 </html>

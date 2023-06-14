@@ -1,0 +1,51 @@
+body {
+    padding: 5%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(177, 70, 73, 0.833);
+    text-shadow: 1px 1px 1px black;
+}
+
+.container {
+    background-color: rgb(255, 240, 222);
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: auto;
+    padding: 10px;
+    width: 100%;
+    padding: 3%;
+    justify-content: center;
+    box-sizing: border-box;
+    background-image: url("../resourses/restaraunt_images/Logo50-20%.png");
+    background-repeat: no-repeat;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: auto;
+    height: auto;
+    background-color: rgba(177, 70, 73, 0.833);
+    padding: 0.5rem;
+    margin: 1rem;
+    padding-bottom: 1.5rem;
+    border-radius: 1rem;
+    word-wrap: break-word;
+    flex: content;
+    text-align: center;
+    flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+}
+
+.row {
+    padding: auto;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}

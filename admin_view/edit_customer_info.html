@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Customer Information</title>
+    <link rel="stylesheet" href="../admin_styles/food_styles.css">
+    <link rel="stylesheet" href="../admin_styles/base.css">
+</head>
+<!-- I didn't add more elements, just a structure, because we will add logic in future -->
+
+<body>
+    <div id="edit_order" class="container">
+
+        <h1>Edit Customer Information</h1>
+        <hr />
+        <div id="edit_cust_table" name="">
+            <table>
+                <form action="" method="post">
+                    <tr>
+                        <td><label for="cust-name">Name</label></td>
+                        <td><input type="text" name="cust-name" id="cust-name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="cust-phnumb">Phone number</label></td>
+                        <td><input type="tel" name="cust-phnumb" id="cust-phnumb"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="cust-email">E-mail</label></td>
+                        <td><input type="email" name="cust-email" id="cust-email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="cust-address">Address</label></td>
+                        <td><input type="text" name="cust-address" id="cust-address"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="cust-orders">Orders</label></td>
+                        <td><input type="number" name="cust-orders" id="cust-orders"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="notes">Notes</label></td>
+                        <td><textarea name="notes" id="notes" cols="20" rows="10"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="cust-phist">Paiment history</label></td>
+                        <td><select name="cust-payment-history" id="cust-phist">
+                                <option value="none">None</option>
+                                <option value="bad">Bad</option>
+                                <option value="good">Good</option>
+                                <option value="excellent">Excellent</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <td>
+                        <button id="cat_reset" type="reset" class="discard">Discard</button>
+                    </td>
+                    <td>
+                        <button id="cat_submit" type="submit" class="save">Save</button>
+                    </td>
+                    </tr>
+                </form>
+            </table>
+        </div>
+        <div class="back-btn"><button class="back"><a href="list_customers.html">Back</a></button></div>
+    </div>
+</body>
+
+</html>

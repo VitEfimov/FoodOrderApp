@@ -1,11 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Order</title>
+    <link rel="stylesheet" href="../admin_styles/food_styles.css">
+    <link rel="stylesheet" href="../admin_styles/base.css">
 </head>
+<!-- I didn't add more elements, just a structure, because we will add logic in future -->
+
 <body>
-    
+    <div id="edit_order" class="container">
+
+        <h1>Edit Category</h1>
+        <hr />
+        <div id="edit_order_table" name="">
+            <table>
+                <form action="" method="post">
+                    <tr>
+                        <td><label for="order-number">Order №</label></td>
+                        <td><input type="text" name="order-number" id="order-number" disabled></td>
+                    </tr>
+                    <tr>
+                        <td><label for="order-date">Order Date</label></td>
+                        <td><input type="datetime-local" name="order-date" id="order-date" disabled></td>
+                    </tr>
+                    <tr>
+                        <td><label for="customer-name">Customer Name</label></td>
+                        <td><input type="text" name="customer-name" id="customer-name" disabled></td>
+                    </tr>
+                    <tr>
+                        <td><label for="order-price">Order Price</label></td>
+                        <td><input type="number" name="order-price" id="order-price"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="payment-status">Category:</label></td>
+                        <td><select name="payment-status" id="payment-status">
+                                <option value="new">New</option>
+                                <option value="not paid">Not paid</option>
+                                <option value="paid">Paid</option>
+                                <option value="in delivery">In delivery</option>
+                                <option value="deliviried">Deliveried</option>
+                                <option value="closed">Closed</option>
+                                <option value="closed">Cancelled</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="select-res">Select Restaraunt</label></td>
+                        <td><select name="select-res" id="select-res">
+                                <option value="food-town-rest">Food Town</option>
+                                <option value="green-leaf-rest">Green Leaf Hotel</option>
+                                <option value="kingston-rest">Kingston Hotel</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <td>
+                        <button id="cat_reset" type="reset" class="discard">Discard</button>
+                    </td>
+                    <td>
+                        <button id="cat_submit" type="submit" class="save">Save</button>
+                    </td>
+                    </tr>
+                </form>
+            </table>
+        </div>
+        <div class="back-btn"><button class="back"><a href="list_orders.html">Back</a></button></div>
+    </div>
 </body>
+
 </html>
