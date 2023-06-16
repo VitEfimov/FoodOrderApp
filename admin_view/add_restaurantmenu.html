@@ -8,11 +8,13 @@
     <title>Add Menu</title>
     <link rel="stylesheet" href="../admin_styles/base.css">
     <link rel="stylesheet" href="../admin_styles/food_styles.css">
+    <link rel="stylesheet" href="../admin_styles/mobile.css">
     <style>
         img {
-            width: 100px;
             height: 80px;
-            object-fit: fill;
+        }
+        #menu_submit{
+            width: 200px;
         }
     </style>
 </head>
@@ -28,12 +30,12 @@
 
             <div class="selres"><label for="selres">Select Restaurant</label></div>
             <div class="selres"><select name="select-restaraunt" class="selres">
-                <option value="disibled" selected="selected">Please select an option</option>
-                <option value="foodtown">Food Town</option>
-                <option value="greenlhotel">Green Leaf Hotel</option>
-                <option value="kinghotel">Kingston Hotel</option>
-            </select>
-        </div>
+                    <option value="disibled" selected="selected">Please select an option</option>
+                    <option value="foodtown">Food Town</option>
+                    <option value="greenlhotel">Green Leaf Hotel</option>
+                    <option value="kinghotel">Kingston Hotel</option>
+                </select>
+            </div>
         </div>
         <hr />
         <div id="add_menu_table" class="rest-table">
@@ -118,7 +120,7 @@
                     </td>
 
                     <td colspan="2">
-                        <button id="menu_submit" type="submit" class="save">Add To Menu</button>
+                        <button id="menu_submit" type="submit" class="save" style="width: 150px;">Add To Menu</button>
                     </td>
                 </tr>
             </table>
