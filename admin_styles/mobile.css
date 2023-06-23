@@ -8,4 +8,69 @@
     .container {
         width: 100%;
     }
+    table{
+      /* width: fit-content; */
+    }
+    table {
+      width: 100%;
+      border: 1px solid rgba(0, 0, 0, 0.276);
+      box-shadow: 1px 2px 3px black;
+      table-layout: fixed;
+  }
+  
+  th {
+      background-color: rgb(248, 212, 173);
+      padding: 10px;
+      border: 1px solid rgba(0, 0, 0, 0.276);
+      /* width: fit-content; */
+  }
+  
+  td {
+      padding: 10px;
+      text-align: center;
+  }
+  
+  tr {
+      width: fit-content;
+  }
+  button {
+      width: auto;
+      box-shadow: 1px 1px black;
+      font-size: 14px;
+      margin: 5px;
+  }
+  
+  .editbtn {
+      border-radius: 10%;
+      width: 40px;
+  }
+  
+  .back {
+      width: auto;
+  }
+  img {
+      border-radius: 10%;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+  }
+  .food-items {
+      display: block;
+  }
+  
+  .selectrestaraunt {
+      text-align: center;
+      margin-bottom: 10px;
+  }
+  
+  .back-btn {
+      text-align: end;
+      margin-top: 10px;
+  }
+  
+  #food_img {
+      background-color: brown;
+      margin-bottom: 10px;
+  }
+  
   }
